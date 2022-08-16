@@ -1,0 +1,24 @@
+2022-08-08T11:16:47,107 Using pip 22.2.2 from C:\Users\jeffe\AppData\Local\Programs\Python\Python310\lib\site-packages\pip (python 3.10)
+2022-08-08T11:16:47,107 Non-user install because site-packages writeable
+2022-08-08T11:16:47,184 Created temporary directory: C:\Users\jeffe\AppData\Local\Temp\pip-ephem-wheel-cache-pip1wyxz
+2022-08-08T11:16:47,184 Created temporary directory: C:\Users\jeffe\AppData\Local\Temp\pip-build-tracker-57xmf7yu
+2022-08-08T11:16:47,184 Initialized build tracking at C:\Users\jeffe\AppData\Local\Temp\pip-build-tracker-57xmf7yu
+2022-08-08T11:16:47,184 Created build tracker: C:\Users\jeffe\AppData\Local\Temp\pip-build-tracker-57xmf7yu
+2022-08-08T11:16:47,184 Entered build tracker: C:\Users\jeffe\AppData\Local\Temp\pip-build-tracker-57xmf7yu
+2022-08-08T11:16:47,208 Created temporary directory: C:\Users\jeffe\AppData\Local\Temp\pip-install-mbng80no
+2022-08-08T11:16:47,208 ERROR: You must give at least one requirement to install (see "pip help install")
+2022-08-08T11:16:47,208 Exception information:
+2022-08-08T11:16:47,208 Traceback (most recent call last):
+2022-08-08T11:16:47,208   File "C:\Users\jeffe\AppData\Local\Programs\Python\Python310\lib\site-packages\pip\_internal\cli\base_command.py", line 167, in exc_logging_wrapper
+2022-08-08T11:16:47,208     status = run_func(*args)
+2022-08-08T11:16:47,208   File "C:\Users\jeffe\AppData\Local\Programs\Python\Python310\lib\site-packages\pip\_internal\cli\req_command.py", line 247, in wrapper
+2022-08-08T11:16:47,208     return func(self, options, args)
+2022-08-08T11:16:47,208   File "C:\Users\jeffe\AppData\Local\Programs\Python\Python310\lib\site-packages\pip\_internal\commands\install.py", line 335, in run
+2022-08-08T11:16:47,208     reqs = self.get_requirements(args, options, finder, session)
+2022-08-08T11:16:47,208   File "C:\Users\jeffe\AppData\Local\Programs\Python\Python310\lib\site-packages\pip\_internal\cli\req_command.py", line 458, in get_requirements
+2022-08-08T11:16:47,208     raise CommandError(
+2022-08-08T11:16:47,208 pip._internal.exceptions.CommandError: You must give at least one requirement to install (see "pip help install")
+2022-08-08T11:16:47,221 Remote version of pip: 22.2.2
+2022-08-08T11:16:47,223 Local version of pip:  22.2.2
+2022-08-08T11:16:47,224 Was pip installed by pip? True
+2022-08-08T11:16:47,224 Removed build tracker: 'C:\\Users\\jeffe\\AppData\\Local\\Temp\\pip-build-tracker-57xmf7yu'
