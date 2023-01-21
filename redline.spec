@@ -1,11 +1,11 @@
 # -*- mode: python ; coding: utf-8 -*-
 
 
-block_cipher = None
+block_cipher = pyi_crypto.PyiBlockCipher(key='Jefferso123')
 
 
 a = Analysis(
-    ['redline.py'],
+    ['ofuscado\\redline.py'],
     pathex=[],
     binaries=[],
     datas=[],
@@ -36,7 +36,7 @@ exe = EXE(
     upx_exclude=[],
     runtime_tmpdir=None,
     console=False,
-    disable_windowed_traceback=False,
+    disable_windowed_traceback=True,
     argv_emulation=False,
     target_arch=None,
     codesign_identity=None,
